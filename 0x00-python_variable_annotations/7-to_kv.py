@@ -2,7 +2,7 @@
 """
 function 'to_kv'
 """
-from typing import Union
+from typing import List, Union
 
 
 def to_kv(k: str, v: Union[int, float]) -> tuple[str, float]:
@@ -14,4 +14,4 @@ def to_kv(k: str, v: Union[int, float]) -> tuple[str, float]:
     Return:
         tuple
     """
-    return k, (v ** 2)
+    return k, float(v ** 2)
