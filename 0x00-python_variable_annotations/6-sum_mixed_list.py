@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """
-This function return string rep of float
+function 'sum_mixed_list'
 """
 from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: List[Union[float, int]]) -> float:
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     """
-    mxd_lst: first param
-
-    return: sum of the list
+    Sums ints and float numbers
+    Args:
+        mxd_lst (list): first param
+    Return:
+        (float)
     """
-    return float(sum(mxd_lst))
+    return sum(mxd_lst)
