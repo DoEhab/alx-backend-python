@@ -2,10 +2,10 @@
 """
 function 'element_length'
 """
-from typing import Union, List, Tuple, Sequence
+from typing import List, Tuple, Sequence, Iterable
 
 
-def element_length(lst: List[str]) -> List[Tuple[str, int]]:
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
     """
         loops on the list to get the length
         Args:
