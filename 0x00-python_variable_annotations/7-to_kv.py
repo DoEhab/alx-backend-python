@@ -14,4 +14,4 @@ def to_kv(k: str, v: Union[int, float]) -> tuple[str, float]:
     Return:
         tuple
     """
-    return k, v*v
+    return k, (v ** 2)
