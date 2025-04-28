@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 import asyncio
-wait_random = __import__('0_basic_async_syntax').wait_random
 
+wait_random = __import__('0_basic_async_syntax').wait_random
 
 """
 function wait_n
 """
 
 
-async def wait_n(n, max_delay):
+async def wait_n(n: int, max_delay: int) -> list[float]:
     """
     :param n: number of tasks
     :param max_delay: max delay value
