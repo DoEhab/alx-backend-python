@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-from basic_async_syntax import wait_random
 import asyncio
+wait_random = __import__('0_basic_async_syntax').wait_random
+
 
 """
 function wait_n
