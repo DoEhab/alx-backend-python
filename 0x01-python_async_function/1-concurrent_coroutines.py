@@ -9,12 +9,11 @@ function wait_n
 
 async def wait_n(n, max_delay):
     """
-
     :param n: number of tasks
     :param max_delay: max delay value
     :return: array of delays
     """
-    tasks = [wait_random(max_delay) for _ in range(n)]
+    tasks = [asyncio.create_task(wait_random(max_delay)) for _ in range(n)]
     delays = []
 
     for task in asyncio.as_completed(tasks):
