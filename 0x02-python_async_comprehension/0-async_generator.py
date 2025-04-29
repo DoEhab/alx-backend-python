@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 import asyncio
 import random
+from typing import AsyncGenerator
 
 """
 async_generator function
 """
 
 
-async def async_generator() -> int:
+async def async_generator() -> AsyncGenerator[float, None]:
     """
     coroutine function
     that returns a random number async
