@@ -7,7 +7,7 @@ async_generator function
 """
 
 
-async def async_generator():
+async def async_generator() -> int:
     """
     coroutine function
     that returns a random number async
