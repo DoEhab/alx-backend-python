@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 import asyncio
 import random
-from typing import AsyncGenerator
 
 """
 async_generator function
 """
+from typing import AsyncGenerator
 
 
 async def async_generator() -> AsyncGenerator[float, None]:
