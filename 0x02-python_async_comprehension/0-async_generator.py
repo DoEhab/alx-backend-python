@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import asyncio
-import random
 
 """
 async_generator function
 """
+import asyncio
+import random
 from typing import AsyncGenerator
 
 
