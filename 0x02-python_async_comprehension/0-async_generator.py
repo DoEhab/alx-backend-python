@@ -16,5 +16,6 @@ async def async_generator() -> Generator[float, None, None]:
     Yields:
         float: A random float between 0 and 10.
     """
-    for _ in range(10):
+    for i in range(10):
+        i: int
         yield random.uniform(0, 10)
