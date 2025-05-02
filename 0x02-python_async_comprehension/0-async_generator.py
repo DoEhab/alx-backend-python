@@ -3,7 +3,6 @@
 async_generator module
 """
 
-import asyncio
 import random
 from typing import Generator
 
