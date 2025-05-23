@@ -20,6 +20,10 @@ class TestAccessNestedMap(unittest.TestCase):
         ({"a": {"b": 2}}, ("a", "b"), 2),
     ])
     def test_access_nested_map(self, nested_map, path, expected):
+        """
+        Compares the maps vs the expected
+        :return: True or False
+        """
         self.assertEqual(access_nested_map(nested_map, path), expected)
 
     @parameterized.expand([
@@ -45,6 +49,10 @@ class TestGetJson(unittest.TestCase):
     ])
     @patch('utils.requests.get')
     def test_get_json(self, url, payload, mock):
+        """
+        Mocks the API Json response
+        :return: True or False
+        """
         mock_response = Mock()
         mock_response.json.return_value = payload
         mock.return_value = mock_response
