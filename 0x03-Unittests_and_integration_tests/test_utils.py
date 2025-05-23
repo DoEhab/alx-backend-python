@@ -31,6 +31,10 @@ class TestAccessNestedMap(unittest.TestCase):
         ({"a": 1}, ("a", "b"), 'b'),
     ])
     def test_access_nested_map_exception(self, nested_map, path, expected_key):
+        """
+        raises exception for errors
+        :return: True or False
+        """
         with self.assertRaises(KeyError) as context_manager:
             access_nested_map(nested_map, path)
         self.assertEqual(str(context_manager.exception), f"'{expected_key}'")
@@ -68,6 +72,10 @@ class TestMemoize(unittest.TestCase):
     class TestMemoize
     """
     def test_memoize(self):
+        """
+        validates the function return value
+        :return: True or False
+        """
         class TestClass:
 
             def a_method(self):
